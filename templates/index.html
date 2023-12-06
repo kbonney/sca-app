@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>String Length Calculator</title>
+    <title>Developmental Mouse Data Viewer</title>
 </head>
 <body>
-    <h1>Enter a String to Calculate Its Length</h1>
-    <form action="/string_length" method="get">
-        <input type="text" name="input" placeholder="Enter string here">
-        <input type="submit" value="Calculate Length">
+    <h1>Enter a gene name to view its expression</h1>
+    <h1>Input Form</h1>
+    <form action="/show_data" method="post">
+        <label for="gene">Gene:</label>
+        <input type="text" id="gene" name="gene"><br><br>
+
+        <label for="time_point">Time point:</label>
+        <input type="text" id="time_point" name="time_point"><br><br>
+
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="Option1">
+        <label for="checkbox1">Checkbox 1</label><br>
+
+        <input type="radio" id="radio1" name="radio_group" value="Radio1">
+        <label for="radio1">Radio 1</label><br>
+
+        <input type="radio" id="radio2" name="radio_group" value="Radio2">
+        <label for="radio2">Radio 2</label><br><br>
+
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
